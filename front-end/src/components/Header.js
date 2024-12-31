@@ -1,10 +1,10 @@
-
+import '../styles/Header.css'
 
 export default function Header(){
     
     return (
-        <header>
-            <h1>PROPHET JOSH</h1>
+        <header className="header">
+            <div className="logo">PROPHET JOSH</div>
             <nav>
                 <ul>
                     <li>
@@ -16,11 +16,9 @@ export default function Header(){
                     <li>
                         EVENTS
                     </li>
-                    <li>
-                        DONATE
-                    </li>
                 </ul>
             </nav>
+            <button className="donate-btn">DONATE</button>
         </header>
         
     )

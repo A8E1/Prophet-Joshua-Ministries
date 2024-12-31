@@ -1,0 +1,19 @@
+h1 {
+    font-size: 3rem; /* Adjust for larger or smaller screens */
+    font-weight: bold; /* Makes the heading stand out */
+    color: white; /* Ensures the text contrasts against the image */
+    text-align: center; /* Centers the text */
+    margin-bottom: 1rem; /* Adds spacing between the h1 and p */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8); /* Adds shadow for better readability over bright images */
+  }
+
+p {
+    font-size: 1.2rem; /* Slightly smaller than the h1 */
+    font-weight: 300; /* Lighter font weight for a clean look */
+    color: white; /* Matches the h1 color */
+    text-align: center; /* Centers the paragraph */
+    line-height: 1.5; /* Increases readability */
+    margin: 0; /* Removes default browser margins */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6); /* Subtle shadow for readability */
+  
+}
