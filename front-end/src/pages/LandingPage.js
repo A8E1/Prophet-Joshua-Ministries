@@ -1,10 +1,15 @@
 import Header from '../components/Header'
 import HeroSection from '../components/HeroSection'
+import '../styles/LandingPage.css'
+
 export default function LandingPage(){
     return(
-        <div>
+        <div className='landing-page'>
             <Header />
-            <HeroSection />
+            <div className='content'>
+                <HeroSection />  
+            </div>
+
         </div>
     )
 }

@@ -1,59 +1,65 @@
 /* General Header Styles */
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-    background-color: white; /* Adjust if necessary */
-    border-bottom: 1px solid #ddd; /* Optional for a clean divider */
-  }
-  
-  /* Logo Styles */
-  .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: black;
-  }
-  
-  /* Navigation Styles */
-  nav ul {
-    display: flex;
-    list-style: none;
-    gap: 1.5rem; /* Space between links */
-    margin: 0;
-    padding: 0;
-  }
-  
-  nav ul li {
-    font-size: 1rem;
-    color: black;
-  }
-  
-  nav ul li a {
-    text-decoration: none;
-    color: black;
-    transition: color 0.3s ease;
-  }
-  
-  nav ul li a:hover {
-    color: #555; /* Slightly darker hover effect */
-  }
-  
-  /* Donate Button Styles */
-  .donate-btn {
-    padding: 0.5rem 1rem;
-    border: 1px solid black;
-    border-radius: 5px;
-    background-color: white; /* Matches the background */
-    color: black;
-    text-transform: uppercase;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s ease, color 0.3s ease;
-  }
-  
-  .donate-btn:hover {
-    background-color: black;
-    color: white;
-  }
-  
+  display: flex;
+  justify-content: space-between; /* Keeps logo on the left and nav + button on the right */
+  align-items: center;
+  padding: 1rem 2rem 10rem;
+  background-color: transparent; /* Adjust if necessary */
+}
+
+/* Logo Styles */
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: black;
+}
+
+/* Navigation Styles */
+nav {
+  display: flex;
+  align-items: center; /* Align nav and button vertically */
+  gap: 4rem; /* Space between nav and button */
+  margin-left: auto; /* Pushes nav + button to the right */
+  margin-right: 1.5rem;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem; /* Space between links */
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  font-size: 1rem;
+  color: black;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #555; /* Slightly darker hover effect */
+}
+
+/* Donate Button Styles */
+.donate-btn {
+  padding: 0.5rem 1rem;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: white; /* Matches the background */
+  color: black;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.donate-btn:hover {
+  background-color: black;
+  color: white;
+}

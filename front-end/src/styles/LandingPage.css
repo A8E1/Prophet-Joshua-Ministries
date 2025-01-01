@@ -1,0 +1,30 @@
+.landing-page {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    background-image: url('../assets/images/file_2.jpg'); /* Set your image */
+    background-size: cover; /* Make the image cover the entire background */
+    background-position: top-center; /* Center the image */
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Optional: Make it scroll smoothly */
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    color: white; /* Ensure the text is visible */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Add contrast for readability */
+  }
+  
+  .content {
+    z-index: 2; /* Ensure the text is on top of the image */
+    text-align: right;
+  }
+  
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  p {
+    font-size: 1.2rem;
+  }
+  
