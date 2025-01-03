@@ -1,0 +1,208 @@
+/* index.css */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+/* landing-page.css */
+.landing-page {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  color: white; /* Ensure the text is visible */
+  /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Add contrast for readability */
+}
+
+.landing-page h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.landing-page p {
+  font-size: 1.2rem;
+}
+
+.content {
+  z-index: 2; /* Ensure the text is on top of the image */
+  text-align: right;
+}
+
+/* quote-section.css */
+.quote-container {
+  text-align: center; /* Centers the content horizontally */
+  padding: 20px;
+  max-width: 600px; /* Constrain width */
+  margin: 20px auto; /* Center the container vertically on the page */
+  font-family: 'Source Serif Pro'; /* Elegant font */
+}
+
+.quote {
+  font-size: 1.5em; /* Larger text for emphasis */
+  margin-bottom: 10px; /* Add spacing between quote and source */
+  color: #333; /* Darker text for contrast */
+}
+
+.source {
+  font-size: 1em; /* Smaller text for the source */
+  color: #555; /* Softer color for the source */
+}
+
+/* hero-section.css */
+.hero-section {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Full viewport height */
+  background-image: url('../assets/images/file_2.jpg'); /* Set your image */
+  background-size: cover; /* Make the image cover the entire background */
+  background-position: top-center; /* Center the image */
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* Optional: Make it scroll smoothly */
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white; /* Ensure the text is visible */
+  /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Add contrast for readability */
+}
+
+.hero-section > * {
+  transform: translateY(50%);
+}
+
+.hero-section h1 {
+  font-size: 2rem; /* Adjust for larger or smaller screens */
+  font-weight: bold; /* Makes the heading stand out */
+  color: white; /* Ensures the text contrasts against the image */
+  text-align: center; /* Centers the text */
+  margin-bottom: 1rem; /* Adds spacing between the h1 and p */
+  /* text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8); /* Adds shadow for better readability over bright images */
+}
+
+.hero-section p {
+  font-size: 1.2rem; /* Slightly smaller than the h1 */
+  font-weight: 300; /* Lighter font weight for a clean look */
+  color: white; /* Matches the h1 color */
+  text-align: center; /* Centers the paragraph */
+  line-height: 1.5; /* Increases readability */
+  margin: 0; /* Removes default browser margins */
+  /* text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6); /* Subtle shadow for readability */
+}
+
+/* General Header Styles */
+.header {
+  position: absolute; /* Makes the header sit on top of the hero section */
+  top: 0; /* Aligns the header to the top of the page */
+  left: 0; /* Aligns the header to the left edge */
+  width: 100%; /* Makes the header span the entire width of the page */
+  z-index: 10; /* Ensures it sits above the hero section */
+  display: flex; /* Flexbox for alignment */
+  justify-content: space-between; /* Aligns logo and nav items */
+  align-items: center; /* Vertically centers items */
+  padding: 1rem 2rem 20rem; /* Adjust padding as needed */
+  background-color: transparent; /* Keeps the background transparent *//* Ensures text is visible on the hero image */
+  box-sizing: border-box; /* Ensures padding doesn't affect width */
+}
+
+/* Logo Styles */
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: black;
+}
+
+/* Navigation Styles */
+nav {
+  display: flex;
+  align-items: center; /* Align nav and button vertically */
+  gap: 4rem; /* Space between nav and button */
+  margin-left: auto; /* Pushes nav + button to the right */
+  margin-right: 1.5rem;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem; /* Space between links */
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  font-size: 1rem;
+  color: black;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #555; /* Slightly darker hover effect */
+}
+
+/* Donate Button Styles */
+.donate-btn {
+  padding: 0.5rem 1rem;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: white; /* Matches the background */
+  color: black;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.donate-btn:hover {
+  background-color: black;
+  color: white;
+}
+
+/* app.css */
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

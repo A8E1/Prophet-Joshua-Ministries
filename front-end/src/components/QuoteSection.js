@@ -1,4 +1,4 @@
-import '../styles/QuoteSection.css'
+import '../styles/test.css'
 
 
 export default function QuoteSection(){

@@ -1,4 +1,4 @@
-import '../styles/HeroSection.css';
+import '../styles/test.css';
 
 export default function HeroSection() {
   return (
