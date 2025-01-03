@@ -1,5 +1,6 @@
 import Header from '../components/Header'
 import HeroSection from '../components/HeroSection'
+import QuoteSection from '../components/QuoteSection'
 import '../styles/LandingPage.css'
 
 export default function LandingPage(){
@@ -7,7 +8,8 @@ export default function LandingPage(){
         <div className='landing-page'>
             <Header />
             <div className='content'>
-                <HeroSection />  
+                <HeroSection />
+                <QuoteSection />
             </div>
 
         </div>

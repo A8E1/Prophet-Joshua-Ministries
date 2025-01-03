@@ -1,4 +1,3 @@
-import React from 'react';
 import '../styles/HeroSection.css';
 
 export default function HeroSection() {
