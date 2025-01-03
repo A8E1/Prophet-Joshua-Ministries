@@ -1,13 +1,6 @@
 .landing-page {
-    position: relative;
-    width: 100%;
-    height: 100vh; /* Full viewport height */
-    background-image: url('../assets/images/file_2.jpg'); /* Set your image */
-    background-size: cover; /* Make the image cover the entire background */
-    background-position: top-center; /* Center the image */
-    background-repeat: no-repeat;
-    background-attachment: fixed; /* Optional: Make it scroll smoothly */
-    background-color: black;
+
+    background-color: white;
     display: flex;
     flex-direction: column;
     color: white; /* Ensure the text is visible */

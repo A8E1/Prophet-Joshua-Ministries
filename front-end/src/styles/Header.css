@@ -1,10 +1,16 @@
 /* General Header Styles */
 .header {
-  display: flex;
-  justify-content: space-between; /* Keeps logo on the left and nav + button on the right */
-  align-items: center;
-  padding: 1rem 2rem 10rem;
-  background-color: transparent; /* Adjust if necessary */
+  position: absolute; /* Makes the header sit on top of the hero section */
+  top: 0; /* Aligns the header to the top of the page */
+  left: 0; /* Aligns the header to the left edge */
+  width: 100%; /* Makes the header span the entire width of the page */
+  z-index: 10; /* Ensures it sits above the hero section */
+  display: flex; /* Flexbox for alignment */
+  justify-content: space-between; /* Aligns logo and nav items */
+  align-items: center; /* Vertically centers items */
+  padding: 1rem 2rem 20rem; /* Adjust padding as needed */
+  background-color: transparent; /* Keeps the background transparent *//* Ensures text is visible on the hero image */
+  box-sizing: border-box; /* Ensures padding doesn't affect width */
 }
 
 /* Logo Styles */
